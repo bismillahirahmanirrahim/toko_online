@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap");
+:root {
+  --orange: #9c6644;
+  --black: #000000;
+  --white: #ffffff;
+  --dark-blue: #00334c;
+  --gray: #808080;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--white);
+  min-height: 100vh;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Teks */
+.heading {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: var(--orange);
+}
+.heading1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+.heading2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333333;
+}
+.card {
+  position: relative;
+  max-width: 350px;
+  height: 480px;
+  background: #fff;
+  margin: 50px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+.card .imgBox {
+  position: relative;
+  padding: 30px;
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+}
+.card .imgBox .image {
+  width: 290px;
+  height: 300px;
+  border-radius: 20px;
+}
+.card .imgBox div img {
+  position: relative;
+  width: 70px;
+  bottom: -35px;
+  right: 30px;
+}
+.card .imgBox .bintang img {
+  position: absolute;
+  width: 130px;
+  left: 42px;
+  bottom: -50px;
+}
+.card .imgBox h2 {
+  padding: 0 15px;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+.card .imgBox p {
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 45px;
+  color: var(--orange);
+}
+.card .imgBox h3 {
+  padding: 5px 33px;
+  margin: -50px 0 0 180px;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--orange);
+}
